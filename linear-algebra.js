@@ -59,6 +59,8 @@ export class Z {
 
     static createFromRange = (from, to) => new Z(utils.createIncreasingArray(from, to));
 
+    static createFromN = (n) => new Z(utils.createIncreasingArray(0, n - 1));
+
     /**
      * Z_n Sum (a +_n b)
      * @param {number} a
@@ -223,16 +225,3 @@ export class Z {
         return Table(table);
     }
 }
-
-console.log(
-    Z.sum(7, 5, 5),
-    Z.multiply(7, 6, 1)
-)
-
-const z7 = Z.createFromRange(0, 6);
-console.log(z7.getAdditionTable());
-console.log(z7.getAllVariablesData());
-
-const z4 = Z.createFromRange(0, 3);
-console.log(z4.getAdditionTable());
-console.log(z4.getAllVariablesData());
