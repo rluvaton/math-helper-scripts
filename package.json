@@ -1,11 +1,10 @@
 {
-  "name": "Math",
+  "name": "math-helper-script",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "node ./linear-algebra.js",
+    "start": "ts-node src/index.ts --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,5 +14,12 @@
     "colors": "^1.4.0",
     "lodash.clonedeep": "^4.5.0",
     "table": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/lodash.clonedeep": "^4.5.6",
+    "@types/node": "^14.14.2",
+    "@types/table": "^6.0.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
   }
 }

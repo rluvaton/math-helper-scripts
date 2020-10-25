@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "typings"
+    ],
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "outDir": "lib",
+    "strict": true,
+    "types": [
+      "node"
+    ],
+    "resolveJsonModule": true
+  },
+  "compileOnSave": false,
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
